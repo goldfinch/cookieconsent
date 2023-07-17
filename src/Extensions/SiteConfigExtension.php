@@ -2,11 +2,14 @@
 
 namespace Goldfinch\CookieConsent\Extensions;
 
-use SilverStripe\Forms\FieldList;
-use SilverStripe\ORM\DataExtension;
-use SilverStripe\ORM\ValidationResult;
 use gorriecoe\Link\Models\Link;
+use SilverStripe\Forms\FieldList;
 use gorriecoe\LinkField\LinkField;
+use SilverStripe\ORM\DataExtension;
+use SilverStripe\Forms\CheckboxField;
+use SilverStripe\Forms\CompositeField;
+use SilverStripe\ORM\ValidationResult;
+use UncleCheese\DisplayLogic\Forms\Wrapper;
 
 class SiteConfigExtension extends DataExtension
 {
