@@ -10,6 +10,7 @@ use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\CompositeField;
 use SilverStripe\ORM\ValidationResult;
 use UncleCheese\DisplayLogic\Forms\Wrapper;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 
 class SiteConfigExtension extends DataExtension
 {
@@ -32,7 +33,7 @@ class SiteConfigExtension extends DataExtension
                 CheckboxField::create('CookieConsent', 'Cookie Consent'),
                 Wrapper::create(
 
-                    HtmlEditorField::create('CookieConsentMessage', 'Message'),
+                    HTMLEditorField::create('CookieConsentMessage', 'Message'),
                     // LinkField::create('CookieConsentPolicyLink', 'Cookie Policy Link', $this->owner),
                     // LinkField::create('CookieConsentPrivacyLink', 'Cookie Privacy Link', $this->owner),
 
