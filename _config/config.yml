@@ -1,0 +1,7 @@
+---
+Name: goldfinch-cookieconsent
+---
+
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - Goldfinch\CookieConsent\Extensions\SiteConfigExtension
